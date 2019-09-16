@@ -1,11 +1,11 @@
 // 1. Set the variable `givenName` to the string "Addison".
-var givenName = "Addison";
+let givenName = "Addison";
 
 // 2. Set candies equal to 20, people to 6, and leftover equal
 // to the remainder of dividing 20 by 6.
-var candies = 20;
-var people = 6;
-var leftover = candies % people;
+let candies = 20;
+let people = 6;
+let leftover = candies % people;
 
 // 3. Create a function called greeting that returns "Hello, <name>!",
 // where <name> is the name given as an argument to the function.
@@ -45,7 +45,7 @@ function isEven(n){
 // Fahrenheit temperature as an argument and returns the
 // temperature in Celsius.
 function fahrenheitToCelsius(t){
-    var cel = (t-32)*(5/9);
+    let cel = (t-32)*(5/9);
     return cel;
 }
 
@@ -53,7 +53,7 @@ function fahrenheitToCelsius(t){
 // Celsius temperature as an argument and returns the
 // temperature in Fahrenheit.
 function celsiusToFahrenheit(t){
-    var far = (t*(9/5)) + 32;
+    let far = (t*(9/5)) + 32;
     return far;
 }
 
@@ -64,7 +64,7 @@ function celsiusToFahrenheit(t){
 // Absolute zero (0 K) is equivalent to −273.15 C.
 // 1 degree Kelvin equals 1 degree Celsius.
 function fahrenheitToKelvin(t){
-    var kel = fahrenheitToCelsius(t);
+    let kel = fahrenheitToCelsius(t);
     kel = kel + 273.15;
     return kel;
 }
@@ -132,8 +132,8 @@ function multigreeting(name, lang){
 // Write a function called gcd that takes two arguments and returns the greatest common
 // divisor using the instructions above.
 function gcd(a, b){
-    var d = 0;
-    var g = 0;
+    let d = 0;
+    let g = 0;
 
     if (a == b){
         return a;
